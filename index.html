@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bolinas Media | Sonoma County Real Estate Photography</title>
+  <title>Bolinas Media | North Bay Real Estate Photography</title>
   <meta
     name="description"
     content="Luxury-feeling real estate photography for Sonoma County listings, agents, and design-forward homes."
@@ -12,9 +12,10 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Manrope:wght@400;600;700&family=Playfair+Display:ital,wght@1,600&display=swap"
     rel="stylesheet"
   >
+  <link rel="preload" href="assets/images/webp/hero-home.webp" as="image" type="image/webp">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body class="page-home">
@@ -22,17 +23,14 @@
   <div class="page-shell">
     <header class="site-header">
       <div class="container header-inner">
-        <a class="brand" href="index.html" aria-label="Bolinas Media home">
+        <a class="brand" href="index.html" aria-label="Bolinas MMXXVI home">
           <span class="brand-mark">B</span>
-          <span class="brand-copy">
-            <span class="brand-name">Bolinas</span>
-            <span class="brand-subtitle">Media</span>
-          </span>
         </a>
         <nav class="site-nav" aria-label="Primary">
           <a class="active" href="index.html">Home</a>
           <a href="gallery.html">Gallery</a>
           <a href="pricing.html">Pricing</a>
+          <a href="about.html">About</a>
           <a href="#contact">Inquire</a>
         </nav>
       </div>
@@ -46,23 +44,22 @@
           muted
           loop
           playsinline
-          preload="metadata"
-          poster="assets/images/image-01.jpeg"
+          preload="none"
+          poster="assets/images/webp/hero-home.webp"
           aria-hidden="true"
         >
           <source src="assets/Gradeddrone.mp4" type="video/mp4">
         </video>
         <div class="container hero-layout">
           <div class="hero-copy">
-            <p class="eyebrow">Sonoma County Real Estate Photography</p>
+            <p class="eyebrow">North Bay Real Estate Photography</p>
             <h1>BOLINAS MEDIA</h1>
             <p class="lede">
-              Elegant photography crafted to make homes feel cinematic, elevated, and move-in irresistible
-              before buyers ever step inside.
+              Elegant marketing media for NorCal real estate
             </p>
             <div class="hero-actions">
               <a class="button button-gold" href="gallery.html">Explore the Gallery</a>
-              <a class="button button-outline" href="sms:17072911761">Inquire</a>
+              <a class="button button-outline" href="#contact">Inquire</a>
             </div>
           </div>
 
@@ -73,13 +70,13 @@
         <div class="container">
           <div class="section-heading">
             <p class="eyebrow">What This Brand Delivers</p>
-            <h2>Visual marketing built to stop the scroll.</h2>
+            <h2>Digital Marketing Media</h2>
           </div>
 
           <div class="service-grid">
             <article class="service-card">
               <span class="card-number">01</span>
-              <h3>Listing Launch Photography</h3>
+              <h3>Listing Photography</h3>
               <p>
                 Bright, architectural coverage that gives buyers an immediate sense of scale,
                 flow, and finish.
@@ -110,7 +107,7 @@
           <div class="section-heading split-heading">
             <div>
               <p class="eyebrow">Selected Frames</p>
-              <h2>A sleek first look at the gallery.</h2>
+              <h2>Gallery Preview</h2>
             </div>
             <a class="text-link" href="gallery.html">View all <span data-gallery-count>49</span> images</a>
           </div>
@@ -119,47 +116,36 @@
         </div>
       </section>
 
-      <section class="section">
-        <div class="container">
-          <div class="section-heading">
-            <p class="eyebrow">Simple Process</p>
-            <h2>Made for busy listings and polished launches.</h2>
-          </div>
-
-          <div class="process-grid">
-            <article class="process-card">
-              <span>01</span>
-              <h3>Book the shoot</h3>
-              <p>Reach out by text or email and lock in the property, timing, and delivery needs.</p>
-            </article>
-            <article class="process-card">
-              <span>02</span>
-              <h3>Capture the story</h3>
-              <p>We focus on light, angles, detail, and flow so the listing feels aspirational from frame one.</p>
-            </article>
-            <article class="process-card">
-              <span>03</span>
-              <h3>Launch with confidence</h3>
-              <p>Use the finished imagery across your gallery, marketing pages, social channels, and MLS materials.</p>
-            </article>
-          </div>
-        </div>
-      </section>
-
       <section class="section contact-section" id="contact">
         <div class="container">
           <div class="contact-panel">
             <div class="contact-copy">
-              <p class="eyebrow">Inquire</p>
-              <h2>Ready to give your next listing a sharper presence?</h2>
+              <p class="eyebrow">Book North Bay Real Estate Photography</p>
+              <h2>Get in touch with us!</h2>
               <p>
-                Reach out directly to book a shoot, ask about availability, or start planning your next property launch.
+                Inquire about professional real estate photography, aerial drone coverage, twilight shoots, or a cinematic listing video for your next North Bay property.
               </p>
             </div>
             <div class="contact-actions">
               <a class="button button-gold" href="sms:17072911761">Text / Call (707) 291-1761</a>
-              <a class="button button-outline" href="mailto:jayk.oberkirch@compass.com">Email jayk.oberkirch@compass.com</a>
+              <a class="button button-outline" href="mailto:ted@bolinas.org">Email ted@bolinas.org</a>
             </div>
+          </div>
+          <div class="contact-inquire" id="inquire-form">
+            <form class="appointment-form" action="https://formsubmit.co/ted@bolinas.org" method="POST">
+              <input type="text" name="_honey" style="display:none">
+              <input type="hidden" name="_captcha" value="false">
+              <div class="form-group">
+                <label for="home-remarks">Your message</label>
+                <textarea
+                  id="home-remarks"
+                  name="remarks"
+                  placeholder="Property address, timeline, deliverables, or anything else we should know..."
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="button button-gold button-full">Send message</button>
+            </form>
           </div>
         </div>
       </section>
@@ -169,6 +155,9 @@
       <div class="container footer-inner">
         <p>© <span data-year></span> Bolinas Media</p>
         <p>Sonoma County, California</p>
+        <p class="footer-disclaimer">
+          All photography, video, drone, and media services are provided for real estate marketing purposes only and may not reflect the current condition of the property; property details, dimensions, boundaries, permits, and features should be independently verified by buyers or agents. Certain images may include virtual staging, twilight enhancements, object removal, or other digital edits for illustrative and marketing purposes only. If questions arise regarding said virtual enhancements, one must verify with a licensed REALTOR. Turnaround times and scheduling may vary depending on project scope, weather, property access, and client responsiveness. All pricing, availability, and services are subject to change without notice. All images, videos, and media remain copyrighted property of Bolinas Media and unauthorized reproduction, resale, redistribution, or commercial reuse is prohibited unless written permission is granted. Photography and media services do not constitute property inspections, appraisals, valuations, engineering reports, or legal representations of the property. By booking services, clients acknowledge and agree to all media usage, delivery, scheduling, and cancellation policies.
+        </p>
       </div>
     </footer>
   </div>
@@ -183,6 +172,6 @@
     <button class="lightbox-nav lightbox-next" type="button" aria-label="Next image" data-lightbox-next>&rarr;</button>
   </div>
 
-  <script src="script.js"></script>
+  <script src="script.js" defer></script>
 </body>
 </html>
