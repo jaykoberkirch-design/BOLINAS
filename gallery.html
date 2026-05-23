@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Bolinas Media</title>
+  <meta
+    name="description"
+    content="Browse the full property photography gallery for Bolinas Media."
+  >
+  <meta name="theme-color" content="#050505">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@600;700&family=Manrope:wght@400;600;700&family=Playfair+Display:ital,wght@1,600&display=swap"
+    rel="stylesheet"
+  >
+  <link rel="preload" href="assets/images/webp/hero-sub.webp" as="image" type="image/webp">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-gallery">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="index.html" aria-label="Bolinas MMXXVI home">
+          <span class="brand-mark">B</span>
+        </a>
+        <nav class="site-nav" aria-label="Primary">
+          <a href="index.html">Home</a>
+          <a class="active" href="gallery.html">Gallery</a>
+          <a href="pricing.html">Pricing</a>
+          <a href="about.html">About</a>
+          <a href="#contact">Inquire</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="subhero section">
+        <div class="container subhero-inner">
+          <p class="eyebrow">Full Portfolio</p>
+          <h1>Media Gallery</h1>
+          <p class="lede">
+            Browse the full set of <span data-gallery-count>49</span> frames—click any image for a full-screen view.
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="gallery-grid" data-gallery-grid></div>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div class="container">
+          <div class="contact-panel">
+            <div class="contact-copy">
+              <p class="eyebrow">Book Listing Photography</p>
+              <h2>Inquire About our Services Today</h2>
+              <p>
+                Request North Bay listing photography, drone imagery, twilight photos, or property video—message below or text/call <strong>(707) 291-1761</strong>.
+              </p>
+            </div>
+          </div>
+          <div class="contact-inquire" id="inquire-form">
+            <form class="appointment-form" action="https://formsubmit.co/ted@bolinas.org" method="POST">
+              <input type="text" name="_honey" style="display:none">
+              <input type="hidden" name="_captcha" value="false">
+              <div class="form-group">
+                <label for="gallery-remarks">Remarks / project details</label>
+                <textarea
+                  id="gallery-remarks"
+                  name="remarks"
+                  placeholder="Tell me a bit about the property and your needs..."
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="button button-gold button-full">Send message</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p>© <span data-year></span> Bolinas Media</p>
+        <p>Sonoma County, California</p>
+        <p class="footer-disclaimer">
+          All photography, video, drone, and media services are provided for real estate marketing purposes only and may not reflect the current condition of the property; property details, dimensions, boundaries, permits, and features should be independently verified by buyers or agents. Certain images may include virtual staging, twilight enhancements, object removal, or other digital edits for illustrative and marketing purposes only. If questions arise regarding said virtual enhancements, one must verify with a licensed REALTOR. Turnaround times and scheduling may vary depending on project scope, weather, property access, and client responsiveness. All pricing, availability, and services are subject to change without notice. All images, videos, and media remain copyrighted property of Bolinas Media and unauthorized reproduction, resale, redistribution, or commercial reuse is prohibited unless written permission is granted. Photography and media services do not constitute property inspections, appraisals, valuations, engineering reports, or legal representations of the property. By booking services, clients acknowledge and agree to all media usage, delivery, scheduling, and cancellation policies.
+        </p>
+      </div>
+    </footer>
+  </div>
+
+  <div class="lightbox" data-lightbox hidden>
+    <button class="lightbox-close" type="button" aria-label="Close image viewer" data-lightbox-close>&times;</button>
+    <button class="lightbox-nav lightbox-prev" type="button" aria-label="Previous image" data-lightbox-prev>&larr;</button>
+    <figure class="lightbox-frame">
+      <img src="" alt="" data-lightbox-image>
+      <figcaption data-lightbox-caption></figcaption>
+    </figure>
+    <button class="lightbox-nav lightbox-next" type="button" aria-label="Next image" data-lightbox-next>&rarr;</button>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
